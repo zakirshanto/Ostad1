@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart with Promo Code</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS ফাইল লিঙ্ক -->
+</head>
+
+<body>
+
+    <div id="cart">
+        <h1>Shopping Cart</h1>
+
+        <!-- Cart Summary -->
+        <div id="cart-summary">
+            <p>Subtotal: $<span id="subtotal">100.00</span></p>
+            <p>Discount: $<span id="discount">0.00</span></p>
+            <p>Total: $<span id="final-total">100.00</span></p>
+        </div>
+
+        <!-- Promo Code Section -->
+        <div id="promo-section">
+            <label for="promo-code">Enter Promo Code:</label>
+            <input type="text" id="promo-code" placeholder="Enter promo code">
+            <button onclick="applyPromoCode()">Apply Code</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript ফাইল লিঙ্ক -->
+
+</body>
+
+</html>
